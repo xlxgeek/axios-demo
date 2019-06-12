@@ -26,7 +26,8 @@ export default {
         };
   
         userLogin(params).then(res => {
-            if(res.code === 200) {
+          console.log(res.retCode)
+            if(res.retCode === 0) {
                 this.$router.push("/home")
             }
         })

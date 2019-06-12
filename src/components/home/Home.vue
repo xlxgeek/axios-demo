@@ -15,7 +15,8 @@ export default {
     },
     created() {
         getStation().then(res => {
-            this.stationName = res.msg;
+          console.log(res)
+            this.stationName = res.retData;
         })
     }
 }

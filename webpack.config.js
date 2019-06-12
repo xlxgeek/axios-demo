@@ -57,7 +57,7 @@ module.exports = {
     // 配置服代理务器
     proxy: {
       '/hydro/*': {    // 只要指向/hydro/的请求，都会自动代理到下面的target的地址
-        target: "http://192.168.1.180:8083",     //对方服务器地址
+        target: "http://localhost:8084",     //对方服务器地址
         secure: false,
         changeOrigin: true
       }
